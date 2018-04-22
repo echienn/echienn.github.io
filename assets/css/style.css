@@ -1,0 +1,234 @@
+/**multiples of 8
+colors: #C2DFE3, #B9D2B1**/
+a:link{
+    text-decoration: none;
+}
+
+/**Experience**/
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	font-family: 'Hind', sans-serif;
+	/**
+	border-bottom-style: solid;
+	border-bottom-width:1px;
+	**/
+	background: #F0F0F0;
+}
+
+.nav_elem{
+	margin: 16px;
+}
+
+.experience{
+	margin-right: 32px;
+}
+
+#all-experience{
+	margin: 96px;
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+	font-size: 32px;
+}
+.experience-item-container{
+	display: flex;
+	justify-content:center;
+
+	flex-wrap: wrap;
+	margin-top: 24px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom:24px;
+
+}
+.experience-box{
+	width: 296px;
+	height: 200px;
+	margin-top: 24px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom:24px;
+	background-color: #C2DFE3;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#nasa-logo{
+	z-index: 10;
+	max-width: 148px;
+}
+
+#qualcomm-logo{
+	width: 224px;
+	z-index: 10;
+}
+#berkeley-campus{
+	width: 296px;
+	height: 200px;
+}
+
+.label-background{
+	width: 296px;
+	height: 200px;
+	position: absolute;
+}
+
+#qualcomm-background{
+	opacity: 0.7;
+}
+
+#all-projects{
+	margin: 96px;
+	text-align: center;
+	font-size: 32px;
+	font-family: 'Hind', sans-serif;
+}
+.project-item-container{
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+	margin-top: 24px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom:24px;
+
+}
+
+.project-box{
+	width: 296px;
+	height: 200px;
+	margin-top: 24px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom:24px;
+	background-color: #B9D2B1;
+}
+
+body{
+	line-height: 1.5;
+	margin: 0;
+}
+/**ABOUT**/
+#profile-pic{
+	min-width: 304px;
+	min-height: 296px;
+	border-radius: 450px;
+	overflow: hidden;
+	margin-left:168px;
+	margin-right:64px;
+	margin-top:96px;
+}
+
+#prof{
+	width: 400px;
+	height: 296px;
+}
+#about-text{
+	font-size: 19px;
+	margin-top: 48px;
+	font-family: 'Hind', sans-serif;
+	margin-bottom: 112px;
+
+
+}
+#about-box{
+	font-family: 'Fredericka the Great', cursive;
+
+	font-size: 48px;
+	margin-top: 112px;
+	margin-left: 64px;
+	margin-right: 168px;
+	border: 64px;
+}
+
+#about-content{
+	display:flex;
+	height: 340px;
+
+}
+
+#contact{
+	font-size: 32px;
+	display: flex;
+	margin-top: 16px;
+}
+
+#linkedin-icon{
+	height:32px;
+	width:32px;
+	margin-left: 20px;
+	margin-right: 20px;
+	z-index: 0;
+}
+
+#gmail-icon{
+	height:32px;
+	width:32px;
+}
+
+.label{
+	font-family: 'Hind', sans-serif;
+	font-size: 16px;
+}
+
+#intro-vid{
+	border: 2px outset #ddd;
+}
+
+#intro{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+}
+
+#intro-vid{
+	margin-top: 260px;
+}
+
+/**Travel**/
+#travel-diary{
+	font-family: 'League Script', cursive;
+	font-size: 64px;
+
+}
+
+.videos{
+	margin-top: 112px;
+	font-family: 'Fredericka the Great', cursive;
+	display: flex;
+	flex-direction:column;
+	
+}
+
+
+
+.video-text{
+	font-size: 64px;
+	display: flex;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	margin-left: 120px;
+
+}
+
+.place{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+
+}
+
+.specific-places{
+	margin-left: 120px;
+	margin-right: 120px;
+	font-family: 'Hind', sans-serif;
+}
+
+.city{
+	margin-top: 64px;
+	margin-bottom: 64px;
+}
+

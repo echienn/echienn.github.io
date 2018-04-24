@@ -2,9 +2,18 @@
 colors: #C2DFE3, #B9D2B1**/
 a:link{
     text-decoration: none;
+   	color: black;
+}
+
+a:visited {
+    color: black;
 }
 
 /**Experience**/
+
+#resume{
+	display:none;
+}
 .navbar{
 	display: flex;
 	flex-direction: row;
@@ -19,6 +28,12 @@ a:link{
 
 .nav_elem{
 	margin: 16px;
+	margin-left: 20px;
+	font-size: 16px
+}
+
+.nav_elem:hover{
+	opacity: 0.5;
 }
 
 .experience{
@@ -28,15 +43,16 @@ a:link{
 #all-experience{
 	margin: 96px;
 	text-align: center;
-	font-family: 'Hind', sans-serif;
-	font-size: 32px;
+	font-family: 'Fredericka the Great', sans-serif;
+	
+	font-size: 40px;
 }
 .experience-item-container{
 	display: flex;
 	justify-content:center;
 
 	flex-wrap: wrap;
-	margin-top: 24px;
+	margin-top: 56px;
 	margin-right: 40px;
 	margin-left: 40px;
 	margin-bottom:24px;
@@ -49,10 +65,10 @@ a:link{
 	margin-right: 40px;
 	margin-left: 40px;
 	margin-bottom:24px;
-	background-color: #C2DFE3;
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	overflow:hidden;
 }
 
 #nasa-logo{
@@ -60,7 +76,17 @@ a:link{
 	max-width: 148px;
 }
 
+#nasa-blurb{
+	z-index: 20;
+	display: none;
+}
+
+#nasa-blurb:hover{
+	display:block;
+}
+
 #qualcomm-logo{
+	max-height: 200px;
 	width: 224px;
 	z-index: 10;
 }
@@ -75,6 +101,30 @@ a:link{
 	position: absolute;
 }
 
+.blurb{
+	width: 296px;
+	height: 140px;
+	/*margin-top: -164px;*/
+	/*margin-right: 40px;*/
+	/*margin-left: 40px;*/
+	/*margin-bottom:24px;*/
+	bottom: 0;
+	background-color: #C2DFE3;
+	z-index: 20;
+	position: absolute;
+	/*display:flex;
+	justify-content:center;
+	align-items:center;*/
+}
+
+.hidden{
+	display:none;
+}
+
+.active{
+	/*display:flex;*/
+}
+
 #qualcomm-background{
 	opacity: 0.7;
 }
@@ -83,7 +133,18 @@ a:link{
 	margin: 96px;
 	text-align: center;
 	font-size: 32px;
-	font-family: 'Hind', sans-serif;
+	font-family: 'Fredericka the Great', cursive;
+	display: flex;
+	justify-content:center;
+	
+}
+
+.project-label{
+	width: 150px;
+	border: 1px solid;
+	border-radius: 6px;
+	margin-right: 16px;
+	margin-left: 16px;
 }
 .project-item-container{
 	display: flex;
@@ -95,8 +156,7 @@ a:link{
 	margin-bottom:24px;
 
 }
-
-.project-box{
+/**.project-box{
 	width: 296px;
 	height: 200px;
 	margin-top: 24px;
@@ -105,12 +165,17 @@ a:link{
 	margin-bottom:24px;
 	background-color: #B9D2B1;
 }
+**/
 
 body{
 	line-height: 1.5;
 	margin: 0;
 }
 /**ABOUT**/
+
+#about-content{
+	display:none;
+}
 #profile-pic{
 	min-width: 304px;
 	min-height: 296px;
@@ -134,8 +199,11 @@ body{
 
 }
 #about-box{
+	/*
+	font-family: 'League Script', cursive;
+	*/
+	
 	font-family: 'Fredericka the Great', cursive;
-
 	font-size: 48px;
 	margin-top: 112px;
 	margin-left: 64px;
@@ -173,6 +241,31 @@ body{
 	font-size: 16px;
 }
 
+/**home**/
+
+/**
+#home-body{
+	background-image: url("background.jpg");
+	height: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+**/
+
+body#home-body {
+    /* The image used */
+    background: url('background.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #intro-vid{
 	border: 2px outset #ddd;
 }
@@ -185,22 +278,47 @@ body{
 }
 
 #intro-vid{
-	margin-top: 260px;
+	margin-top: 96px;
+}
+
+#home-view{
+	text-align: center;
+	
+}
+#name{
+	margin-top: 88px;
+	font-family: 'Fredericka the Great', sans-serif;
+	font-size: 64px;
+}
+
+#home-nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: 'Hind', sans-serif;
+	background: transparent;
 }
 
 /**Travel**/
 #travel-diary{
+	/*
 	font-family: 'League Script', cursive;
+	*/
+	font-family: 'Fredericka the Great', cursive;
 	font-size: 64px;
 
 }
 
 .videos{
 	margin-top: 112px;
-	font-family: 'Fredericka the Great', cursive;
 	display: flex;
 	flex-direction:column;
+
 	
+}
+
+.diary{
+	display: none;
 }
 
 
@@ -211,6 +329,11 @@ body{
 	margin-top: 16px;
 	margin-bottom: 16px;
 	margin-left: 120px;
+	display: none;
+	/*
+	font-family: 'League Script', cursive;
+	*/
+	font-family: 'Fredericka the Great', cursive;
 
 }
 
@@ -225,10 +348,16 @@ body{
 	margin-left: 120px;
 	margin-right: 120px;
 	font-family: 'Hind', sans-serif;
+	display: none;
 }
 
 .city{
 	margin-top: 64px;
 	margin-bottom: 64px;
+
+}
+
+#travel-diary{
+	text-align: center;
 }
 

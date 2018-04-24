@@ -2,37 +2,43 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Fredericka+the+Great|Hind" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=League+Script|Fredericka+the+Great|Hind" rel="stylesheet">
 	</head>
 	<body>
+
 		<div class = "navbar">
-			<div class = "about nav_elem">About</div>
-			<div class = "map nav_elem">Map</div>
-			<div class = "travel nav_elem">Travel</div>
-			<div class = "experience nav_elem">Resume</div>
+			<a href = "index.html"><div class = "home nav_elem">Home</div></a>
+			<a href="about.html"><div class = "about nav_elem">About</div></a>
+			<a href = "travel.html"><div class = "travel nav_elem">Travel</div></a>
+			<a href = "experience.html"><div class = "experience nav_elem">Resume</div></a>
 		</div>
 		<div id = "resume">
 			<div id = "all-experience">Experience
 				<div class = "experience-item-container">
 					<div class = "entire-experience">
-						<div class = "experience-box">
+						<div class = "experience-box" id = "q-box">
 							<img id = "qualcomm-background" class = "label-background" src="assets/img/qualcomm-background.png">
 							<img id = "qualcomm-logo" class = "label-image" src="assets/img/qualcomm_full.png">
+						<div class = "hidden blurb" id = "q-blurb"></div>
 						</div>
+						
 						<div class = "label">Qualcomm Software Engineer Intern
 						</div>
-					</div>
-					<div class = "entire-experience">
-						<div class = "experience-box">
-							<img id = "berkeley-campus" src="assets/img/berkeley_campus.jpeg">
 						</div>
+					<div class = "entire-experience">
+						<div class = "experience-box" id = "data-box">
+							<img id = "berkeley-campus" src="assets/img/berkeley_campus.jpeg">
+						<div class = "hidden blurb" id = "data-blurb"></div>
+						</div>
+						
 						<div class = "label">Data Science Module Developer
 						</div>
 					</div>
 					<div class = "entire-experience">
-						<div class = "experience-box">
+						<div class = "experience-box" id = "nasa-box">
 							<img id = "nasa-logo" class = "label-image" src="assets/img/nasa-logo.png">
 							<img id = "nasa-background" class = "label-background" src="assets/img/nasa-background.jpg">
+						<div class = "hidden blurb" id = "nasa-blurb"></div>
 						</div>
 						<div class = "label">NASA Research Intern
 						</div>
@@ -40,18 +46,20 @@
 				</div>
 
 			</div>
-			<div id = "all-projects">Projects
+			<div id = "all-projects">
+				<a href="https://github.com/echienn"><div class= "project-label">Github</div></a>
+				<div id = "full-resume"><a href="assets/ElaineChien_resume.pdf"><div class= "project-label">Resume</div></a></div>
+				<!--
 				<div class = "project-item-container">
 					<div class = "project-box"></div>
 					<div class = "project-box"></div>
 					<div class = "project-box"></div>
 					
 				</div>
+			-->
 			</div>
 		</div>
-		<div id = "full-resume"><a href="assets/ElaineChien_resume.pdf">View Full Resume</a></div>
-		
-
-
 	</body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </html>

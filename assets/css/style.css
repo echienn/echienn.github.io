@@ -101,7 +101,7 @@ a:visited {
 	/*margin-left: 40px;*/
 	/*margin-bottom:24px;*/
 	bottom: 0;
-	background-color: #A3C9E2;
+	background-color:  #C2DFE3;
 	z-index: 20;
 	position: absolute;
 	
@@ -296,7 +296,7 @@ body{
 
 /**Travel**/
 #travel-here{
-	color: #79A7C6;
+	color: #829DA0;
 }
 #travel-diary{
 	/*

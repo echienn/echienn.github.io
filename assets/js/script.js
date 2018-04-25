@@ -6,11 +6,17 @@ $(document).ready(function()  {
 	$("#resume").fadeIn();
 	$("#home-body").fadeIn("fast");
 
-	$(".experience-box").hover( function() {
+	// jQuery Function Number #1
+	$(".experience-box").hover( function() 1
+		// jQuery Function Number #2
 		if ($(this).attr("id") == "q-box"){
+			// jQuery Function Number #3
 			if ($("#q-blurb").hasClass("hidden")) {
+				// jQuery Function Number #4
 		        $("#q-blurb").slideDown(1000);
+		        // jQuery Function Number #5
 		        $("#q-blurb").removeClass("hidden");
+		        // jQuery Function Number #6
 		        $("#q-blurb").addClass("active");
   			}
   		}

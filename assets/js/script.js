@@ -7,7 +7,7 @@ $(document).ready(function()  {
 	$("#home-body").fadeIn("fast");
 
 	// jQuery Function Number #1
-	$(".experience-box").hover( function() 1
+	$(".experience-box").hover( function(){
 		// jQuery Function Number #2
 		if ($(this).attr("id") == "q-box"){
 			// jQuery Function Number #3
@@ -16,7 +16,7 @@ $(document).ready(function()  {
 		        $("#q-blurb").slideDown(1000);
 		        // jQuery Function Number #5
 		        $("#q-blurb").removeClass("hidden");
-		        // jQuery Function Number #6
+		       // jQuery Function Number #6
 		        $("#q-blurb").addClass("active");
   			}
   		}
